@@ -10,5 +10,19 @@ def merge(arr1,arr2):
             i += 1
             # en caso de el segundo sublista sea mas pequeño
         else:
-    pass
+            result.append (arr2[j])
+            j += 1
+            # si arr1 se termina las sublista 
+            if i == len(arr1):
+                # colocar sublista del otro elemento
+                for k in range(j, len(arr2)): result.append(arr2[k])
+                 #si nos acaba la lista ponemos las dos lista
+                if j == len(arr2):
+                    for k in range(i, len(arr1)): result.append(arr2[k])
+                    return result
+                
+                
+
 def merge_sort(arr):
+    pass
+    

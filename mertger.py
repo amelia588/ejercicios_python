@@ -6,7 +6,7 @@ def merge(arr1,arr2):
     while 1 < len(arr1) and j < len(arr2):
         # mientras las dos indices no llegan al final el areglo vamos comparar el primer elemento sublista 1 y 2
         if arr1[i] < arr2[j]:
-            result.append(arr1[i]):
+            result.append(arr1[i])
             i += 1
             # en caso de el segundo sublista sea mas pequeño
         else:
@@ -21,8 +21,14 @@ def merge(arr1,arr2):
                     for k in range(i, len(arr1)): result.append(arr2[k])
                     return result
                 
-                
-
 def merge_sort(arr):
     pass
+# ejemolo
+import random
+a = [1, 2, 3, 4]
+b = [3, 4, 6, 7]
+
+merge(a, b)
+
+
     
